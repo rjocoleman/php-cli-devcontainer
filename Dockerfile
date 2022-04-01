@@ -2,6 +2,8 @@
 ARG VARIANT=8.1-cli-bullseye
 FROM php:${VARIANT}
 
+LABEL org.opencontainers.image.source="https://github.com/rjocoleman/php-cli-devcontainer.io"
+
 # Copy library scripts to execute
 COPY library-scripts/*.sh library-scripts/*.env /tmp/library-scripts/
 

@@ -7,7 +7,7 @@ Designed to be a drop-in replacement for Microsoft devcontainer base images - an
 
 ## Image:
 
-Image `docker.io/rjocoleman/php-cli-devcontainer` hosted on DockerHub. Should be available in linux/amd64 and linux/arm64 variants.
+Image `ghcr.io/rjocoleman/php-cli-devcontainer` hosted on GitHub Container Registry. Should be available in linux/amd64, linux/arm/v7 and linux/arm64 variants.
 
 
 ### Features:
@@ -27,13 +27,13 @@ Image `docker.io/rjocoleman/php-cli-devcontainer` hosted on DockerHub. Should be
 
 ### Example usage:
 
-* `devcontainer.json` as `"image": "docker.io/rjocoleman/php-cli-devcontainer"`
-* `docker-compose.yml` as `image: docker.io/rjocoleman/php-cli-devcontainer`
+* `devcontainer.json` as `"image": "ghcr.io/rjocoleman/php-cli-devcontainer"`
+* `docker-compose.yml` as `image: ghcr.io/rjocoleman/php-cli-devcontainer`
 
 Or, if you need to customise it use it as a base in a `Dockerfile`:
 
 ```Dockerfile
-FROM docker.io/rjocoleman/php-cli-devcontainer
+FROM ghcr.io/rjocoleman/php-cli-devcontainer
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
 ARG NODE_VERSION="none"
